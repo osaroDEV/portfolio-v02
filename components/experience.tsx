@@ -4,31 +4,44 @@ import { CalendarDays, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    title: "Frontend Software Engineer",
+    company: "Anora.dev.",
+    location: "Seattle, Washington, USA",
+    period: "Apr 2025 - Present",
     description:
-      "Lead frontend development for web applications serving 100k+ users. Architected component libraries, optimized performance, and mentored junior developers on modern React patterns.",
+      "Lead frontend development for web applications serving 10k+ users. Design, develop, and deploy scalable software solutions. Collaborate with cross-functional teams to define, design, and ship new features. Troubleshoot and maintain existing systems while optimizing performance.",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    type: "remote",
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Solutions Ltd.",
-    location: "New York, NY",
-    period: "2020 - 2022",
+    title: "Frontend Technologies Trainer",
+    company: "The Knowledge Academy",
+    location: "London, England, UK",
+    period: "Apr 2023 - Present",
     description:
-      "Developed responsive web applications and improved user experience metrics by 40%. Collaborated closely with design teams to implement pixel-perfect interfaces and interactive animations.",
-    technologies: ["React", "Vue.js", "SASS", "JavaScript", "Figma"],
+      "A remote instructor's role involves delivering interactive training and personalized guidance through video conferencing or e-learning platforms. They design assessments to track student progress and assist with problem-solving using real-world examples. Additionally, they stay current on industry trends and collaborate with their team to improve training programs.",
+    technologies: ["React", "CSS", "SASS", "JavaScript", "Figma"],
+    type: "remote & part-time",
   },
   {
-    title: "Junior Frontend Developer",
-    company: "StartupXYZ",
-    location: "Austin, TX",
-    period: "2019 - 2020",
+    title: "Lead Frontend Developer",
+    company: "Foresight Tech Agency",
+    location: "Lagos, Nigeria",
+    period: "Mar 2023 - May 2025",
     description:
-      "Built and maintained company website and internal dashboards. Gained experience in modern frontend development practices, responsive design, and cross-browser compatibility.",
+      "Led a team of 5 frontend developers in building a high-performance e-commerce platform, resulting in a 20% increase in conversion rate. Established and implemented a front-end code style guide and automated testing practices, reducing code review time by 30% and improving code maintainability. Mentored junior developers by providing technical guidance, code reviews, and training sessions, contributing to a 15% increase in team productivity.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
+    type: "remote",
+  },
+  {
+    title: "Frontend Software Engineer",
+    company: "Tech Experts",
+    location: "Lagos, NG",
+    period: "Apr 2020 - Feb 2023",
+    description:
+      "Developed and maintained responsive user interfaces for various web applications, ensuring optimal user experience across all devices (desktop, tablet, mobile). Collaborated with UI/UX designers to translate design mockups into functional and visually appealing web pages using HTML, CSS, and JavaScript. Implemented accessibility best practices (WCAG) to ensure web applications were inclusive for users with disabilities.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
+    type: "onsite",
   },
 ]
 
@@ -65,6 +78,9 @@ export function Experience() {
                         <MapPin className="h-4 w-4 mr-1" />
                         {experience.location}
                       </div>
+                      <Badge variant="secondary">
+                        {experience.type}
+                      </Badge>
                     </div>
                   </div>
                 </CardHeader>

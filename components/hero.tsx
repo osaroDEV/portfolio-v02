@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export function Hero() {
@@ -34,7 +35,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-purple-600 via-blue-600 to-red-600 hover:from-purple-700 hover:to-blue-700"
             >
               View My Work
             </Button>
@@ -44,21 +45,17 @@ export function Hero() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="sm" className="hover:text-purple-600">
+            <Link href='https://github.com/osaroDEV' target="_blank" rel="" className="hover:text-blue-600">
               <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="sm" className="hover:text-purple-600">
+            </Link>
+            <Link href='https://linkedin.com/in/osaroonaiwu' target="_blank" rel="" className="hover:text-blue-600">
               <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="sm" className="hover:text-purple-600">
+            </Link>
+            <Button variant="ghost" size="sm" className="hover:text-blue-600">
               <Mail className="h-5 w-5" />
             </Button>
           </div>
         </div>
-{/* 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="h-6 w-6 text-muted-foreground" />
-        </div> */}
       </div>
     </section>
   )

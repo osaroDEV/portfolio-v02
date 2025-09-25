@@ -50,15 +50,15 @@ export function Contact() {
             <div className="space-y-6">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-purple-600 mr-4" />
-                <span>hello@osarodev.com</span>
+                <span>osaro@codeillustrated.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-purple-600 mr-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+234 (0) 703-1036-340</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-purple-600 mr-4" />
-                <span>San Francisco, CA</span>
+                <span>Lagos, NG</span>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export function Contact() {
               <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form action="https://formsubmit.co/e23d2215a1207a224b5026ed5052c582" method="POST" className="space-y-4">
                 <div>
                   <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
                 </div>
@@ -95,7 +95,7 @@ export function Contact() {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+                  className="w-full bg-gradient-to-r from-purple-600 via-blue-600 to-red-600 hover:from-purple-700 hover:to-blue-700"
                 >
                   <Send className="h-4 w-4 mr-2" />
                   Send Message

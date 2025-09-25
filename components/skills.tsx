@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 const skillCategories = [
   {
     title: "Frontend Frameworks",
-    skills: ["React", "Next.js"],
+    skills: ["React", "Next.js", 'jQuery'],
   },
   {
     title: "Languages & Styling",
@@ -12,7 +12,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Libraries",
-    skills: ["Framer Motion", "React Query", "Zustand", "Vite", "Webpack", "ESLint"],
+    skills: ["Framer Motion", "React Query", "Zustand", "Webpack", "ESLint", 'shad-cn/ui'],
   },
   {
     title: "Design & Workflow",
