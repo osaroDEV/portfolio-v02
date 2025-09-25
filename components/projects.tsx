@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
+import Link from "next/link"
 
 const projects = [
   {
@@ -32,13 +33,13 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Weather App Interface",
+    title: "Lawfirm Website",
     description:
-      "Beautiful weather application frontend with location-based forecasts, interactive maps, and dynamic backgrounds.",
-    image: "/weather-dashboard-interface.png",
-    technologies: ["React", "Styled Components", "Leaflet", "CSS Animations"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A professional website for a law firm, featuring service listings, and a contact form with validation.",
+    image: "/michaelstevenssolicitors.png",
+    technologies: ["Next", "Tailwind", "Zustand", "Sanity CMS", "CSS Animations"],
+    liveUrl: "https://michaelstevenssolicitors.com",
+    githubUrl: "https://github.com/osaroDEV/mss",
   },
 ]
 
@@ -77,14 +78,14 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button size="sm" className="flex-1">
+                  <Link href={project.liveUrl} target='_blank' className="flex-1 bg-black text-white justify-center items-center flex rounded-sm py-2">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Live Demo
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1 bg-transparent">
+                  </Link>
+                  <Link href={project.githubUrl} target='_blank' className="flex-1 bg-transparent justify-center items-center flex rounded-sm border">
                     <Github className="h-4 w-4 mr-2" />
                     Code
-                  </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
